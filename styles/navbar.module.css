@@ -172,16 +172,16 @@
 }
 
 /* .search_field::before {
-  content: '';
-  position: absolute;
-  right: 14px;
-  top: -4px;
-  height: 12px;
-  width: 12px;
-  background-color: #4070f4;
-  transform: rotate(-45deg);
-  z-index: -1;
-} */
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: #4070f4;
+    transform: rotate(-45deg);
+    z-index: -1;
+  } */
 
 .search_field input {
   height: 100%;

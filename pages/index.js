@@ -1,8 +1,7 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import styles from 'ahmad/styles/Home.module.css';
-import Navbar from 'ahmad/components/Navbar';
+import Head from 'next/head'
+import Navbar from 'ahmad/components/Navbar'
+import { Inter } from '@next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,46 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section className={styles.home}>
-          <div className={styles.container}>
-            <div className={styles.wrap}>
-              <div className={styles.left}>
-                <Image src={'/sample.png'} width={558} height={300} />
-                <div className={styles.content_left}>
-                  <p className={styles.tgl}>
-                    <span>DetikNews</span> | Mei 14, 2022
-                  </p>
-                  <h1 className={styles.head}>KPK Dianggap Tak Jeli, Samin Tan Lolos dari Jeruji</h1>
-                  <p className={styles.last}>1 minggu yang lalu</p>
-                </div>
-              </div>
-              <div className={styles.right}>
-                <div className={styles.card}>
-                  <div className={styles.content}>
-                    <h1 className={styles.content_head}>Andrie Bayuajie Ditangkap, Begini Kata Yovie Widianto</h1>
-                    <p className={styles.desc}>
-                      Today akan resmi ditutup pada 6 Juli 2022. <br /> Line Indonesia menyampaikan....
-                    </p>
-                    <p className={styles.cor}>1 minggu yang lalu</p>
-                  </div>
-                  <Image src={'/sample.png'} width={150} height={100} />
-                </div>
-                <hr />
-                <div className={styles.card}>
-                  <div className={styles.content}>
-                    <h1 className={styles.content_head}>Andrie Bayuajie Ditangkap, Begini Kata Yovie Widianto</h1>
-                    <p className={styles.desc}>
-                      Today akan resmi ditutup pada 6 Juli 2022. <br /> Line Indonesia menyampaikan....
-                    </p>
-                    <p className={styles.cor}>1 minggu yang lalu</p>
-                  </div>
-                  <Image src={'/sample.png'} width={150} height={100} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
       </main>
     </>
-  );
+  )
 }
