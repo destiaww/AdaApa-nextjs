@@ -46,10 +46,10 @@ const Navbar = () => {
               <Link href="#">Health</Link>
             </li>
             <li>
-              <Link href="#">Science</Link>
+              <Link href="#">Sport</Link>
             </li>
             <li>
-              <Link href="#">Sport</Link>
+              <Link href="#">Political</Link>
             </li>
             <li>
               <Link href="#">Technology</Link>
