@@ -43,7 +43,7 @@ const Navbar = () => {
               <Link href="#">Entertainment</Link>
             </li>
             <li>
-              <Link href="#">Health</Link>
+              <Link href="#">Lifestyle</Link>
             </li>
             <li>
               <Link href="#">Sport</Link>
