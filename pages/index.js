@@ -1,18 +1,18 @@
-import { Navbar, Carousel, Highlight, Footer } from 'ahmad/components'
-import { Inter } from '@next/font/google'
-
-
-
-const inter = Inter({ subsets: ['latin'] });
+import { Carousel, Highlight, Feed, Terkini, Banner, RootLayout } from 'ahmad/components';
+import Data from 'ahmad/public/data/data';
 
 export default function Home() {
+  const filterData = Data.filter((item) => item.terkini);
   return (
     <>
-      <main>
-        <section>
-          Hallo
-        </section>
-      </main>
+      <RootLayout title="AdaApa - Berita hari ini di Indonesia">
+        <main>
+          <Carousel data={Data} />
+          <Highlight data={Data} />
+          <Feed data={filterData} link={`detail`} title="Berita Terkini" />
+          <Terkini data={Data} />
+        </main>
+      </RootLayout>
     </>
-  )
+  );
 }
