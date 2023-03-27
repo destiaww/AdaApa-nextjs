@@ -1,6 +1,5 @@
-import Navbar from "./Navbar";
 import Highlight from "./Highlight";
 import Carousel from "./Carousel";
-import Footer from "./Footer";
+import RootLayout from "./Layout";
 
-export { Navbar, Highlight, Carousel, Footer };
+export { RootLayout, Highlight, Carousel };
