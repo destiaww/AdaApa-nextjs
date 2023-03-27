@@ -55,7 +55,12 @@ To deploy this project run
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+- Mobile View
+![mobile (1)](https://user-images.githubusercontent.com/80156805/228090285-8a4cdb6e-63ed-4b81-83ab-0b7b3bcc4916.png)
+
+- Dekstop View
+![mobile (2)](https://user-images.githubusercontent.com/80156805/228090354-f5ce575b-cede-4599-b3be-e317707acf35.png)
+
 
 
 ## Authors
