@@ -1,13 +1,17 @@
-import { RootLayout } from 'ahmad/components';
+import { Feed, Highlight, RootLayout } from 'ahmad/components';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import styles from 'ahmad/styles/kategori.module.css';
 
 const Menu = () => {
   const router = useRouter();
   const { id } = router.query;
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const filterUtama = results.filter((item) => item.main);
+  const filterData = results.filter((item) => item.cate);
 
+  console.log(filterData);
   const url = '/data/data.json';
 
   useEffect(() => {
@@ -24,17 +28,10 @@ const Menu = () => {
 
   return (
     <RootLayout title={id}>
-      <section>
-        <div>
-          {isLoading ? (
-            <p>Loading...</p>
-          ) : (
-            <div>
-              {results.map((item, index) => (
-                <p>{item.category}</p>
-              ))}
-            </div>
-          )}
+      <section className={styles.kategori}>
+        <div className={styles.container}>
+          <Highlight data={filterUtama} />
+          <Feed data={filterData} title={'Berita Terkini'} link={'/detail'} />
         </div>
       </section>
     </RootLayout>

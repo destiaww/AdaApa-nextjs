@@ -51,7 +51,7 @@ const Index = ({ data }) => {
                 <div className={styles.wrapper_top}>
                   <h1 className={styles.head_right}>Berita terpopuler</h1>
                   {filterPopuler.map((item, index) => (
-                    <Link href={`detail/${item.id}`}>
+                    <Link href={`/detail/${item.id}`}>
                       <div className={styles.news}>
                         <h1 className={styles.no}>#{index + 1}</h1>
                         <div className={styles.news_content}>
@@ -65,7 +65,7 @@ const Index = ({ data }) => {
                 <div className={styles.wrapper_bottom}>
                   <h1 className={styles.head_right}>Komentar Terbanyak</h1>
                   {filterComment.map((item) => (
-                    <Link href={`detail/${item.id}`}>
+                    <Link href={`/detail/${item.id}`}>
                       <div className={styles.news}>
                         <Image src={'/comment.svg'} width={24} height={24} />
                         <div className={styles.news_content}>
