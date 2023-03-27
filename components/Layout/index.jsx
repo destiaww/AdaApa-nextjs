@@ -14,6 +14,7 @@ const RootLayout = ({ children, title }) => {
       </Head>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 };
