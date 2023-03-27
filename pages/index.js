@@ -11,6 +11,7 @@ export default function Home() {
           <Highlight data={Data} />
           <Feed data={filterData} link={`detail`} title="Berita Terkini" />
           <Terkini data={Data} />
+          <Banner />
         </main>
       </RootLayout>
     </>

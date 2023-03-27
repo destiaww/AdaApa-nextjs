@@ -1,0 +1,30 @@
+[
+  {
+    "menu": "Home",
+    "Link": "/"
+  },
+  {
+    "menu": "Business",
+    "Link": "Business"
+  },
+  {
+    "menu": "Politik",
+    "Link": "politik"
+  },
+  {
+    "menu": "Entertaiment",
+    "Link": "Entertainment"
+  },
+  {
+    "menu": "Lifestyle",
+    "Link": "Lifestyle"
+  },
+  {
+    "menu": "Sport",
+    "Link": "sport"
+  },
+  {
+    "menu": "Technology",
+    "Link": "technology"
+  }
+]
