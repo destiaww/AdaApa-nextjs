@@ -1,7 +1,13 @@
+.detail {
+  padding-bottom: 0px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .head {
   width: 80%;
@@ -10,11 +16,56 @@
 .content {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
+}
+.img_head {
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.wrap {
+  display: flex;
+  column-gap: 40px;
+}
+.wrapper_top {
+  display: flex;
+  flex-direction: column;
   row-gap: 20px;
 }
-.img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
+.no {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+.news_content {
+  display: flex;
+  row-gap: 4px;
+  flex-direction: column;
+}
+.news_head {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.news_desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: #969696;
+}
+.content_left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 80%;
+}
+.content_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.news {
+  display: flex;
+  column-gap: 10px;
 }
 .img {
   object-fit: cover;
@@ -37,6 +88,11 @@
   font-size: 24px;
   color: #109be9;
 }
+.wrapper_bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
 @media screen and (max-width: 1200px) {
   .head {
     font-size: 38px;
@@ -44,21 +100,22 @@
   .content p {
     font-size: 16px;
   }
-  .img {
-    width: 1000px;
-  }
   .desc {
     width: 1000px;
   }
 }
 @media screen and (max-width: 1052px) {
+  .wrap {
+    flex-direction: column;
+    row-gap: 20px;
+  }
   .head {
     font-size: 38px;
   }
   .content p {
     font-size: 16px;
   }
-  .img {
+  .img_head {
     width: 800px;
   }
   .desc {
@@ -72,7 +129,7 @@
   .content p {
     font-size: 16px;
   }
-  .img {
+  .img_head {
     width: 600px;
   }
   .desc {
@@ -87,7 +144,7 @@
   .content p {
     font-size: 16px;
   }
-  .img {
+  .img_head {
     width: 500px;
   }
   .desc {
@@ -96,14 +153,17 @@
 }
 
 @media screen and (max-width: 530px) {
+  .content_left {
+    row-gap: 6px;
+  }
   .head {
     font-size: 28px;
   }
   .content p {
     font-size: 14px;
   }
-  .img {
-    width: 300px;
+  .img_head {
+    width: 320px;
     height: 200px;
   }
   .desc {
@@ -112,5 +172,11 @@
   .ion {
     font-size: 24px;
     color: #109be9;
+  }
+  .content_left {
+    width: 100%;
+  }
+  .head {
+    width: 100%;
   }
 }
