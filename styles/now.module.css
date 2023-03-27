@@ -196,8 +196,12 @@
     width: 320px;
     height: 300px;
   }
+  .img_left {
+    width: 320px;
+    height: 200px;
+  }
   .date {
-    font-size: 12px;
+    font-size: 14px;
   }
   .head {
     font-size: 20px;
@@ -206,7 +210,7 @@
     width: 75%;
   }
   .desc {
-    font-size: 12px;
+    font-size: 14px;
   }
   .card_content {
     flex-direction: column;
