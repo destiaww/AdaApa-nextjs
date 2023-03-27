@@ -1,6 +1,8 @@
-# Website AdaApA.
 
-Website news berita Indonesia
+# Project Title
+
+AdaApa News
+
 
 ## Run Locally
 
@@ -19,7 +21,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npx create-next-app .
+  npm install
 ```
 
 Start the server
@@ -28,29 +30,42 @@ Start the server
   npm run dev
 ```
 
+
 ## Build With
 
 This project is used by the following companies:
 
 - Next Js
 - Node Js
-- React Js
 - CSS Module
+## Deployment
+
+To deploy this project run
+
+```bash
+  
+```
+
 
 ## Features
 
-- Search
-- Filter by category
-
-## Documentation
+- Search by title
+- Short by category
 
 
-## Deployment
+## Screenshots
 
-Deployment Link : https://tugas-tefa-next-js.vercel.app/
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Authors
+
+- [@Abyansyah](https://github.com/Abyansyah)
+- [@arumm8](https://github.com/arumm8)
+- [@destiaww](https://github.com/destiaww)
+- [@FavianIbra](https://github.com/FavianIbra)
 
 ## Feedback
 
-If you have any feedback, please reach out to us at.
+If you have any feedback, please reach out to us at ha@ha.com
 
-- Instagram : @
