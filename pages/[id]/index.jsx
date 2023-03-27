@@ -10,8 +10,6 @@ const Menu = () => {
   const [isLoading, setIsLoading] = useState(true);
   const filterUtama = results.filter((item) => item.main);
   const filterData = results.filter((item) => item.cate);
-
-  console.log(filterData);
   const url = '/data/data.json';
 
   useEffect(() => {
@@ -25,6 +23,14 @@ const Menu = () => {
 
     fetchData();
   }, [id]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (results.length === 0) {
+    return <div>404: Category not found</div>;
+  }
 
   return (
     <RootLayout title={id}>
