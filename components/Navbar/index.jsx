@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className={styles.nav_bar}>
         <FaBars className={styles.sidebarOpen} onClick={toggleMenu} />
         <span className={`${styles.logo} ${styles.navLogo}`}>
-          <Image src={'./logo.svg'} width={136} height={44} />
+          <Image src={'/logo.svg'} width={136} height={44} />
         </span>
 
         <div className={`${styles.menu} ${showMenu ? styles.active : ''}`}>
