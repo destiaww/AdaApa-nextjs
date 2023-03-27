@@ -13,7 +13,6 @@ export default function Home() {
           Hallo
         </section>
       </main>
-      <Footer />
     </>
   )
 }
