@@ -37,6 +37,7 @@
 }
 .utama {
   display: flex;
+  flex-direction: row-reverse;
   column-gap: 20px;
   align-items: center;
 }
