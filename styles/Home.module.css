@@ -50,6 +50,7 @@
   font-size: 18px;
   color: #fff;
   font-weight: 600;
+  width: 85%;
 }
 .last {
   font-size: 12px;
@@ -133,5 +134,8 @@
   }
   .desc {
     display: none;
+  }
+  .head {
+    width: 90%;
   }
 }
