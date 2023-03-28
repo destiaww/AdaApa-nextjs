@@ -7,19 +7,10 @@ const Highlight = ({ data }) => {
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const url = '/data/data.json';
-
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch(url);
-      const data = await res.json();
-      const category = data.filter((item) => item.utama);
-      setResults(category);
-      setIsLoading(false);
-    };
-
-    fetchData();
-  }, []);
+    setResults(data);
+    setIsLoading(false);
+  }, [data]);
 
   return (
     <section className={styles.home}>
