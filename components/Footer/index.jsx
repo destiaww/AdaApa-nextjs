@@ -9,28 +9,28 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.footer_widget}>
-            <a href="#">
+            <Link href="/">
               <Image src={'/logo.svg'} width={150} height={100} />
-            </a>
+            </Link>
             <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt magni recusandae ut! Natus?</p>
             <ul className={styles.socials}>
               <li>
-                <Link href="#">
+                <Link href="https://www.instagram.com/" target={'_blank'}>
                   <FaInstagram />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://twitter.com/" target={'_blank'}>
                   <FaTwitter />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.facebook.com/" target={'_blank'}>
                   <FaFacebook />
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="https://www.youtube.com/" target={'_blank'}>
                   <FaYoutube />
                 </Link>
               </li>
@@ -66,10 +66,7 @@ function Footer() {
                 <Link href="#">AdaApa Event</Link>
               </li>
               <li>
-                <Link href="#">seo optimization</Link>
-              </li>
-              <li>
-                <Link href="#">blog writing</Link>
+                <Link href="#">Komunitas</Link>
               </li>
             </ul>
           </div>
@@ -77,16 +74,16 @@ function Footer() {
             <h6>Help &amp; Support</h6>
             <ul className={styles.links}>
               <li>
-                <a href="#">support center</a>
+                <Link href="#">support center</Link>
               </li>
               <li>
-                <a href="#">live chat</a>
+                <Link href="#">live chat</Link>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <Link href="#">FAQ</Link>
               </li>
               <li>
-                <a href="#">terms &amp; conditions</a>
+                <Link href="#">terms &amp; conditions</Link>
               </li>
             </ul>
           </div>
