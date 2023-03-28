@@ -10,7 +10,7 @@ function Footer() {
         <div className={styles.wrapper}>
           <div className={styles.footer_widget}>
             <a href="#">
-              <Image src={'./logo.svg'} width={150} height={100} />
+              <Image src={'/logo.svg'} width={150} height={100} />
             </a>
             <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt magni recusandae ut! Natus?</p>
             <ul className={styles.socials}>
