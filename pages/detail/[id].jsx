@@ -1,10 +1,10 @@
 import styles from 'ahmad/styles/detail.module.css';
-import RootLayout from 'ahmad/components/Layout';
+import { RootLayout, Feed, Banner } from 'ahmad/components';
 import Image from 'next/image';
 import { BiHeart, BiShareAlt, BiComment } from 'react-icons/bi';
-import Feed from 'ahmad/components/feed';
+
 import Data from 'ahmad/public/data/data';
-import Banner from 'ahmad/components/banner';
+
 import Link from 'next/link';
 
 const Index = ({ data }) => {

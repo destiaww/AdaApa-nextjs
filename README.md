@@ -1,8 +1,6 @@
-
 # Project Title
 
 AdaApa News
-
 
 ## Run Locally
 
@@ -30,7 +28,6 @@ Start the server
   npm run dev
 ```
 
-
 ## Build With
 
 This project is used by the following companies:
@@ -38,30 +35,27 @@ This project is used by the following companies:
 - Next Js
 - Node Js
 - CSS Module
+
 ## Deployment
 
 To deploy this project run
 
 ```bash
-  
-```
 
+```
 
 ## Features
 
 - Search by title
 - Short by category
 
-
 ## Screenshots
 
-- Mobile View
+Mobile View
 ![mobile (1)](https://user-images.githubusercontent.com/80156805/228090285-8a4cdb6e-63ed-4b81-83ab-0b7b3bcc4916.png)
 
-- Dekstop View
+Dekstop View
 ![mobile (2)](https://user-images.githubusercontent.com/80156805/228090354-f5ce575b-cede-4599-b3be-e317707acf35.png)
-
-
 
 ## Authors
 
@@ -73,4 +67,3 @@ To deploy this project run
 ## Feedback
 
 If you have any feedback, please reach out to us at ha@ha.com
-
