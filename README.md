@@ -38,7 +38,7 @@ This project is used by the following companies:
 
 ## Deployment
 
-[Link Website](https://adaapa-df3ryc4cg-destiawulan10-gmailcom.vercel.app/)
+[Link Website](https://adaapa.vercel.app/)
 
 ## Features
 
