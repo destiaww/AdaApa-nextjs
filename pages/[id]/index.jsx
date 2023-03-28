@@ -2,6 +2,7 @@ import { Feed, Highlight, RootLayout } from 'ahmad/components';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from 'ahmad/styles/kategori.module.css';
+import Not from 'ahmad/pages/_error';
 
 const Menu = () => {
   const router = useRouter();
@@ -29,7 +30,7 @@ const Menu = () => {
   }
 
   if (results.length === 0) {
-    return <div>404: Category not found</div>;
+    return <Not />;
   }
 
   return (
