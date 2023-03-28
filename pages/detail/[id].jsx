@@ -1,17 +1,17 @@
-import styles from 'ahmad/styles/detail.module.css';
-import { RootLayout, Feed, Banner } from 'ahmad/components';
-import Image from 'next/image';
-import { BiHeart, BiShareAlt, BiComment } from 'react-icons/bi';
-
-import Data from 'ahmad/public/data/data';
-
-import Link from 'next/link';
+import styles from "ahmad/styles/detail.module.css";
+import Image from "next/image";
+import { BiHeart, BiShareAlt, BiComment } from "react-icons/bi";
+import Data from "ahmad/public/data/data";
+import { RootLayout, Feed, Banner } from "ahmad/components";
+import Link from "next/link";
 
 const Index = ({ data }) => {
-  const paragraphs = data.deskripsi.split('\n');
+  const paragraphs = data.deskripsi.split("\n");
   const filterPopuler = Data.filter((item) => item.populer);
   const filterComment = Data.filter((item) => item.comment);
-  const filterData = Data.filter((item) => item.category === data.category && item.id !== data.id).slice(0, 4);
+  const filterData = Data.filter(
+    (item) => item.category === data.category && item.id !== data.id
+  ).slice(0, 4);
 
   return (
     <>
@@ -19,10 +19,10 @@ const Index = ({ data }) => {
         <section className={styles.detail}>
           <div className={styles.container}>
             <p className={styles.back}>
-              <Link className={styles.back} href={'/'}>
-                {' '}
-                Home {'>'}{' '}
-              </Link>{' '}
+              <Link className={styles.back} href={"/"}>
+                {" "}
+                Home {">"}{" "}
+              </Link>{" "}
               {data.category}
             </p>
             <div className={styles.content}>
@@ -42,7 +42,12 @@ const Index = ({ data }) => {
             </div>
             <div className={styles.wrap}>
               <div className={styles.content_left}>
-                <Image className={styles.img_head} src={data.foto} width={800} height={500} />
+                <Image
+                  className={styles.img_head}
+                  src={data.foto}
+                  width={800}
+                  height={500}
+                />
                 {paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -56,7 +61,9 @@ const Index = ({ data }) => {
                         <h1 className={styles.no}>#{index + 1}</h1>
                         <div className={styles.news_content}>
                           <h1 className={styles.news_head}>{item.title}</h1>
-                          <p className={styles.news_desc}>AdaApa | {item.time}</p>
+                          <p className={styles.news_desc}>
+                            AdaApa | {item.time}
+                          </p>
                         </div>
                       </div>
                     </Link>
@@ -67,10 +74,12 @@ const Index = ({ data }) => {
                   {filterComment.map((item) => (
                     <Link href={`/detail/${item.id}`}>
                       <div className={styles.news}>
-                        <Image src={'/comment.svg'} width={24} height={24} />
+                        <Image src={"/comment.svg"} width={24} height={24} />
                         <div className={styles.news_content}>
                           <h1 className={styles.news_head}>{item.title}</h1>
-                          <p className={styles.news_desc}>AdaApa | {item.time}</p>
+                          <p className={styles.news_desc}>
+                            AdaApa | {item.time}
+                          </p>
                         </div>
                       </div>
                     </Link>
@@ -97,7 +106,7 @@ export async function getStaticPaths() {
     }));
     return { paths, fallback: false };
   } catch (error) {
-    console.log('Error Cuy');
+    console.log("Error Cuy");
   }
 }
 
@@ -106,6 +115,6 @@ export async function getStaticProps({ params }) {
     const data = await Data.find((item) => item.id.toString() === params.id);
     return { props: { data } };
   } catch (error) {
-    console.log('Error Cuy');
+    console.log("Error Cuy");
   }
 }
