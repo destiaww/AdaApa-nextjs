@@ -10,7 +10,7 @@ export default function Home() {
       <RootLayout title="AdaApa - Berita hari ini di Indonesia">
         <main>
           <Carousel />
-          <Highlight data={category} />
+          <Highlight  />
           <Feed data={filterData} link={`detail`} title="Berita Terkini" />
           <Terkini data={Data} />
           <Banner />
