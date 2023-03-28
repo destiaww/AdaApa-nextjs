@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
+import Loading from '../loading';
 
 const Search = () => {
   const router = useRouter();
@@ -64,7 +65,7 @@ const Search = () => {
             </option>
           </select>
           {isLoading ? (
-            <p>Loading...</p>
+            <Loading />
           ) : (
             <div className={styles.wrap}>
               {filteredResults.map((item, index) => (
