@@ -42,9 +42,7 @@ This project is used by the following companies:
 
 To deploy this project run
 
-```bash
-  
-```
+adaapa.vercel.app
 
 
 ## Features
